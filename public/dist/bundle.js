@@ -22766,7 +22766,7 @@ var _home = __webpack_require__(444);
 
 var _home2 = _interopRequireDefault(_home);
 
-var _menuBar = __webpack_require__(797);
+var _menuBar = __webpack_require__(798);
 
 var _menuBar2 = _interopRequireDefault(_menuBar);
 
@@ -22797,18 +22797,17 @@ var App = function (_Component) {
       return _react2.default.createElement(
         'div',
         { className: 'App' },
-        _react2.default.createElement(_menuBar2.default, null),
         _react2.default.createElement(
           _reactRouterDom.BrowserRouter,
           null,
-          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home2.default })
+          _react2.default.createElement(
+            'div',
+            null,
+            _react2.default.createElement(_menuBar2.default, { url: window.location }),
+            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home2.default })
+          )
         )
       );
-      // return (
-      //   <div className="App">
-      //     <MovieList />
-      //   </div>
-      // );
     }
   }]);
 
@@ -43725,8 +43724,6 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(132);
-
 var _axios = __webpack_require__(139);
 
 var _axios2 = _interopRequireDefault(_axios);
@@ -43735,7 +43732,7 @@ var _preferenceFlow = __webpack_require__(463);
 
 var _preferenceFlow2 = _interopRequireDefault(_preferenceFlow);
 
-var _header = __webpack_require__(798);
+var _header = __webpack_require__(797);
 
 var _header2 = _interopRequireDefault(_header);
 
@@ -44854,8 +44851,7 @@ var PreferenceFlow = function (_React$Component) {
             color: 'google plus'
           },
           ' Finish '
-        ),
-        _react2.default.createElement(_reactRouterDom.Route, { path: '/recommendations', component: _movieList2.default })
+        )
       );
     }
   }]);
@@ -64759,26 +64755,15 @@ var _semanticUiReact = __webpack_require__(54);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import './styles.css';
-// import SearchBar from './searchBar';
-
-var MenuBar = function MenuBar(props) {
+var GifListHeader = function GifListHeader(props) {
   return _react2.default.createElement(
     'div',
-    { className: 'menu-container' },
-    _react2.default.createElement(
-      _semanticUiReact.Menu,
-      { style: { background: '#121212' } },
-      _react2.default.createElement(
-        'p',
-        null,
-        'Geneflix'
-      )
-    )
+    { className: 'header' },
+    _react2.default.createElement('div', { className: 'header-title' })
   );
 };
 
-exports.default = MenuBar;
+exports.default = GifListHeader;
 
 /***/ }),
 /* 798 */
@@ -64797,17 +64782,34 @@ var _react2 = _interopRequireDefault(_react);
 
 var _semanticUiReact = __webpack_require__(54);
 
+var _reactRouterDom = __webpack_require__(132);
+
+var _movieList = __webpack_require__(404);
+
+var _movieList2 = _interopRequireDefault(_movieList);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var GifListHeader = function GifListHeader(props) {
+// import SearchBar from './searchBar';
+
+var MenuBar = function MenuBar(props) {
   return _react2.default.createElement(
     'div',
-    { className: 'header' },
-    _react2.default.createElement('div', { className: 'header-title' })
+    { className: 'menu-container' },
+    _react2.default.createElement(
+      _semanticUiReact.Menu,
+      { style: { background: '#121212' } },
+      _react2.default.createElement(
+        'p',
+        null,
+        'Geneflix'
+      )
+    ),
+    _react2.default.createElement(_reactRouterDom.Route, { path: '/recommendations', component: _movieList2.default })
   );
 };
 
-exports.default = GifListHeader;
+exports.default = MenuBar;
 
 /***/ }),
 /* 799 */

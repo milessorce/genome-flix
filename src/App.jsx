@@ -10,17 +10,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <MenuBar />
         <Router>
-          <Route exact={true} path='/' component={Home} />
+          <div>
+            <MenuBar url={window.location} />
+            <Route exact path='/' component={Home} />
+          </div>
         </Router>
       </div>
     );
-    // return (
-    //   <div className="App">
-    //     <MovieList />
-    //   </div>
-    // );
   }
 }
 
