@@ -1,0 +1,128 @@
+var genreRelationships = {
+  Action: {
+    Communal: .06,
+    Aesthetic: .12,
+    Dark: .10,
+    Thrilling: .66,
+    Cerebral: .13
+  },
+  Adventure: {
+    Communal: .22,
+    Aesthetic: -.13,
+    Dark: .13,
+    Thrilling: .66,
+    Cerebral: .12
+  },
+  Animation: {
+    Communal: .33,
+    Aesthetic: .19,
+    Dark: .23,
+    Thrilling: .30,
+    Cerebral: -.10
+  },
+  Comedy: {
+    Communal: .39,
+    Aesthetic: .01,
+    Dark: .21,
+    Thrilling: .17,
+    Cerebral: -.06
+  },
+  Crime: {
+    Communal: .20,
+    Aesthetic: -.19,
+    Dark: -.08,
+    Thrilling: -.41,
+    Cerebral .34:
+  },
+  Documentary: {
+    Communal: -.08,
+    Aesthetic: .42,
+    Dark: -.04,
+    Thrilling: -.06,
+    Cerebral: .44
+  },
+  Drama: {
+    Communal: .46,
+    Aesthetic: .27,
+    Dark: .06,
+    Thrilling: .07,
+    Cerebral: .00
+  },
+  Family: {
+    Communal: .54,
+    Aesthetic: .23,
+    Dark: .00,
+    Thrilling: .12,
+    Cerebral: -.07
+  },
+  Fantasy: {
+    Communal: .71,
+    Aesthetic: .15,
+    Dark: -.06,
+    Thrilling: -.05,
+    Cerebral:
+  },
+  History: {
+    Communal: .71,
+    Aesthetic: .15,
+    Dark: -.06,
+    Thrilling: -.05,
+    Cerebral:
+  },
+  Horror: {
+    Communal: .71,
+    Aesthetic: .15,
+    Dark: -.06,
+    Thrilling: -.05,
+    Cerebral:
+  },
+  Music: {
+    Communal: .71,
+    Aesthetic: .15,
+    Dark: -.06,
+    Thrilling: -.05,
+    Cerebral:
+  },
+  Mystery: {
+    Communal: .71,
+    Aesthetic: .15,
+    Dark: -.06,
+    Thrilling: -.05,
+    Cerebral:
+  },
+  Romance: {
+    Communal: .71,
+    Aesthetic: .15,
+    Dark: -.06,
+    Thrilling: -.05,
+    Cerebral:
+  },
+  Science Fiction: {
+    Communal: -.11,
+    Aesthetic: .22,
+    Dark: .36,
+    Thrilling: .57,
+    Cerebral: .06
+  },
+  Thriller: {
+    Communal: .16,
+    Aesthetic: .10,
+    Dark: .17,
+    Thrilling: .64,
+    Cerebral: .04
+  },
+  War: {
+    Communal: -.02,
+    Aesthetic: -.07,
+    Dark: .24,
+    Thrilling: .51,
+    Cerebral: .17
+  },
+  Western: {
+    Communal: .-.07,
+    Aesthetic: .12,
+    Dark: -.19,
+    Thrilling: -.54,
+    Cerebral: -.25
+  }
+}
