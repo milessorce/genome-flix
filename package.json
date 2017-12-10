@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
     "ejs": "latest",
     "express": "latest",
     "express-session": "^1.15.6",
@@ -10,8 +12,10 @@
     "mysql2": "^1.5.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "request": "latest",
-    "sequelize": "^4.27.0"
+    "request": "^2.83.0",
+    "sequelize": "^4.27.0",
+    "tmdb": "^2.2.0",
+    "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
     "react-scripts": "1.0.17"
