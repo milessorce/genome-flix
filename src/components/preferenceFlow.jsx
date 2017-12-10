@@ -71,10 +71,6 @@ class PreferenceFlow extends React.Component {
     window.scrollTo(0, 0);
   }
 
-  handleFinishClick(e) {
-
-  }
-
   render() {
     return (
       <div style={{textAlign: 'center', paddingBottom: '20px'}}>
