@@ -1,37 +1,20 @@
   <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.css">
+    <link rel="stylesheet" href='./styles.css'>
+
   </head>
   <body>
-    <div class="container">
-      <div class="page-header">
-        <p class="lead">GENOME LINK example</p>
-      </div>
+    <div class="container" id='body-container'>
+    <div id='root'></div>
 
       <% if (authorize_url) { %>
-      <a href="<%= authorize_url %>" class="btn btn-default">Connect with genome</a>
+      <button class="ui button"> <a href="<%= authorize_url %>" >Connect with genome</a> </button>
       <% } %>
-      
-      <% if (reports.length > 0) { %>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Genetic insights</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% for (let report of reports) { %>
-          <tr>
-            <th scope="row"><%= report.phenotype.display_name %></th>
-            <td><%= report.summary.text %></td>
-          </tr>
-          <% } %>
-        </tbody>
-      </table>
-      <% } %>
-
-    </div>
+    <script src="./dist/bundle.js"></script>
   </body>
+
+
 </html>
