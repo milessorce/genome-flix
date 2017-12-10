@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import axios from 'axios';
 import PreferenceFlow from './preferenceFlow.jsx';
 import Header from './header.jsx';

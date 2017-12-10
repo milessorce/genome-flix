@@ -1,7 +1,7 @@
 import React from 'react';
 import Columns from "react-columns";
 import { Button, Icon } from 'semantic-ui-react';
-import { Link, Route, browserHistory } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import MovieList from './movieList.jsx';
 
 const genres = ['Action', 'Adventure', 'Animation', 'Comedy', 'Crime', 'Documentary', 'Drama', 'Family', 'Fantasy', 'History', 'Horror', 'Music', 'Mystery', 'Romance', 'Science Fiction', 'Thriller', 'War', 'Western'];
@@ -111,8 +111,7 @@ class PreferenceFlow extends React.Component {
             size='massive'
             color='google plus'
           > Finish </Button>
-        }
-        <Route path='/recommendations' component={MovieList} />      
+        }     
       </div>
     )
   }
