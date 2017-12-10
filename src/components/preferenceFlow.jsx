@@ -1,6 +1,8 @@
 import React from 'react';
 import Columns from "react-columns";
 import { Button, Icon } from 'semantic-ui-react';
+import { Link, Route, browserHistory } from 'react-router-dom';
+import MovieList from './movieList.jsx';
 
 const genres = ['Action', 'Adventure', 'Animation', 'Comedy', 'Crime', 'Documentary', 'Drama', 'Family', 'Fantasy', 'History', 'Horror', 'Music', 'Mystery', 'Romance', 'Science Fiction', 'Thriller', 'War', 'Western'];
 const queries = [
@@ -69,6 +71,10 @@ class PreferenceFlow extends React.Component {
     window.scrollTo(0, 0);
   }
 
+  handleFinishClick(e) {
+
+  }
+
   render() {
     return (
       <div style={{textAlign: 'center', paddingBottom: '20px'}}>
@@ -98,13 +104,19 @@ class PreferenceFlow extends React.Component {
             ))}
           </Columns>
         </div>
-        <Button
-          size='massive'
-          color='google plus'
-          onClick={this.state.mode === 'favorite' ? this.handleContinueClick : null}
-        >
-        {this.state.mode === 'favorite' ? 'Continue' : 'Finish'}
-        </Button>
+        {
+          this.state.mode === 'favorite' ? 
+          <Button
+            size='massive'
+            color='google plus'
+            onClick={this.handleContinueClick}
+          > Continue </Button> :        
+          <Button as={Link} to={'/recommendations'}
+            size='massive'
+            color='google plus'
+          > Finish </Button>
+        }
+        <Route path='/recommendations' component={MovieList} />      
       </div>
     )
   }
