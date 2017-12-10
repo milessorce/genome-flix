@@ -68,7 +68,7 @@ class PreferenceFlow extends React.Component {
     this.setState({
       mode: 'dislike'
     });
-    window.scrollTo(0, 0);
+    window.scrollTo({top: 0, behavior: 'smooth'});
   }
 
   render() {
