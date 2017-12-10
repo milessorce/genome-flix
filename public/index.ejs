@@ -1,20 +1,19 @@
   <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Genomeflix</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.css">
-    <link rel="stylesheet" href='./styles.css'>
-
+    <link rel="stylesheet" href='styles.css'>
   </head>
   <body>
     <div class="container" id='body-container'>
-    <div id='root'></div>
+      <div id='root'>
+      </div>
 
-      <% if (authorize_url) { %>
-      <button class="ui button"> <a href="<%= authorize_url %>" >Connect with genome</a> </button>
-      <% } %>
+        <% if (authorize_url) { %>
+          <button class="ui button"> <a href="<%= authorize_url %>" >Connect with genome</a> </button>
+        <% } %>
+    </div>
     <script src="./dist/bundle.js"></script>
   </body>
-
-
 </html>

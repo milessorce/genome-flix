@@ -16,6 +16,7 @@ app.use(session({
     maxAge: 30 * 60 * 1000
   }
 }));
+app.use(express.static('public'));
 
 app.get('/', async (req, res) => {
   tmdb.getMoviesByGenre( (result) => {
