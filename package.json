@@ -19,15 +19,15 @@
     "react": "^16.2.0",
     "react-columns": "^1.1.0",
     "react-dom": "^16.2.0",
-    "request": "^2.83.0",
-    "sequelize": "^4.27.0",
     "tmdb": "^2.2.0",
     "xmlhttprequest": "^1.8.0",
     "semantic-ui-css": "^2.2.12",
     "semantic-ui-react": "^0.77.0",
-    "sequelize": "^4.27.0",
     "style-loader": "^0.19.0",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "react-router-dom": "^4.2.2",
+    "request": "latest",
+    "sequelize": "^4.27.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
