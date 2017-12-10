@@ -1,7 +1,7 @@
 var XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 
 const tmdb = {
-  'api_key': '2a43b2c5a07e8be85e7ec15a2b12ab5c',
+  'api_key': 'API_KEY_HERE',
   'base_uri': 'http://api.themoviedb.org/3',
   'images_uri': 'http://image.tmdb.org/t/p',
   'timeout': 5000,
